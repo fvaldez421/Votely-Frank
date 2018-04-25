@@ -1,0 +1,19 @@
+.mainImage{
+  width: 70%;
+  bottom: 0;
+  position: absolute;
+}
+
+.jumbotron{
+  padding-top:0;
+}
+
+h1{
+  margin-top: 10%;
+}
+
+.jumbotron .headertext{
+  text-align:left;
+  margin:0;
+
+}

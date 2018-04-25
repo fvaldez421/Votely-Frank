@@ -1,0 +1,21 @@
+.blue{
+  background-color:#007BFF;
+  padding:20px;
+  color:#fff;
+  height:500px;
+  padding-top:100px!important;
+}
+
+.red{
+  background-color:#FB2259;
+  padding:20px;
+  color:#fff;
+  height:500px;
+  padding-top:100px!important;
+}
+
+.jumbotron h2, .jumbotron p{
+  text-align:center;
+  width: 50%;
+  margin:0 auto
+}

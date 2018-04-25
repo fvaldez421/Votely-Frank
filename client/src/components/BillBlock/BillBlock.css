@@ -1,0 +1,39 @@
+.card h5{
+  font-weight:bold;
+  text-align:left;
+}
+
+.card-text{
+  overflow: scroll;
+  height: 150px;
+  color: #999;
+}
+
+.card-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-title{
+    width:100%;
+    color: #0079c1;
+    height: 2em; 
+    line-height: 1em; 
+    font-size: 20px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    cursor: pointer;
+    /*word-break: break-all*/;
+    overflow:hidden;
+    white-space: nowrap;
+    transition-timing-function: ease-in-out;
+    line-height:1.2em;
+}
+.card-title:hover{
+    overflow: visible; 
+    white-space: normal;
+    height:auto; /* just added this line */
+}
+

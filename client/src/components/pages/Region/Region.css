@@ -1,0 +1,12 @@
+.region a{
+  color: #000;
+  text-align:center;
+}
+
+.region a span{
+  color:#999;
+}
+
+.not-active{
+  opacity:.5
+}

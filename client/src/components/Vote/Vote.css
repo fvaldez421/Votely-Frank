@@ -1,0 +1,25 @@
+.voteBlock{
+    border:1px solid #eee;
+    padding:10px;
+}
+
+h5,h4{
+	text-align: center;
+}
+
+.loggedIn{
+	text-align: center;
+}
+
+.btn-yes{
+    background-color:#0057B5;
+}
+
+.btn-no{
+    background-color:#FB2259;
+    margin:0 10px;
+}
+
+.btn-maybe{
+
+}

@@ -1,0 +1,21 @@
+.footer{
+	position: absolute;
+	/* position: fixed;
+	bottom: 0; */
+	text-align: center;
+	padding: 20px;
+
+	width: 100%;
+	background-color: red;
+
+}
+
+.footerin{
+	background-color: red;
+
+	width: 100%;	
+}
+
+footer .container{
+	background-color:transparent;
+}
