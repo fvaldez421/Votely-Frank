@@ -155,7 +155,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(res);
           if (res.data[0]) {
-            // console.log(res.data[0]);
+            console.log(res.data[0]);
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -500,6 +500,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(res);
           if (res.data[0]) {
+            console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -843,6 +844,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(res);
           if (res.data[0]) {
+            console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -1495,8 +1497,8 @@ class App extends Component {
       }
     });
     this.setState({ stateUpdated: true });
-    // console.log("done");
-    // console.log(this.state.stateUpdated);
+    console.log("done");
+    console.log(this.state.stateUpdated);
   }
 
 
