@@ -154,9 +154,11 @@ class App extends Component {
       API.getUser(this.state.yesVoters[i])
         .then(res => {
           let user = res.data[0];
-          // console.log(res);
+          console.log(this.state.yesVoters);
+          console.log(i);
+          console.log(res);
           if (res.data[0]) {
-            console.log(res.data[0]);
+            // console.log(res.data[0]);
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
