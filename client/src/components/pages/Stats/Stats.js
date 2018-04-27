@@ -57,11 +57,12 @@ class App extends Component {
         this.setState({ 
           yesVoters: res.data[0].votes_yes,
           noVoters: res.data[0].votes_no,
-          undeVoters: res.data[0].votes_undecided 
+          undeVoters: res.data[0].votes_undecided
         });
-        // console.log(this.state.yesVoters)
-        // console.log(this.state.noVoters)
-        // console.log(this.state.undeVoters)
+        console.log(res.data[0]);
+        console.log(this.state.yesVoters);
+        console.log(this.state.noVoters);
+        console.log(this.state.undeVoters);
         if (this.state.yesVoters.length > 0) {
           this.getYesVoters();
         }else {
