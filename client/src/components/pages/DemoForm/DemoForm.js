@@ -51,7 +51,7 @@ class DemoForm extends Component {
 				this.props.getUser(this.props.userId);
 			})
 			.catch(err => console.log(err));
-		} else {
+		}else {
 			API.updateUser( this.state.userId, {
 				age: this.state.age,
 				gender: this.state.gender,
@@ -158,7 +158,7 @@ class DemoForm extends Component {
 									</select>
 								</div>
 
-								<Link to="/region" >
+								<Link to="/" >
 									<button 
 										onClick={ () => {this.handleFormSubmit()}} 
 										id="submitbtn" type="submit" className="btn btn-primary">
