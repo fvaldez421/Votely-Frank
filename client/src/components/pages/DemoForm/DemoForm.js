@@ -33,8 +33,7 @@ class DemoForm extends Component {
 	};
 
 	handleFormSubmit = event => {
-		
-		// event.preventDefault();
+		console.log(this.state);
 		if (!this.props.userExist && this.props.userName) {
 			API.saveUser({
 				userId: this.props.userId,
