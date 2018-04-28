@@ -157,7 +157,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(this.state.yesVoters);
           // console.log(i);
-          // console.log(res);
+          console.log(res);
           if (res.data[0]) {
             console.log(res.data[0]);
   // _____________________ AGE ___________________________
@@ -422,7 +422,16 @@ class App extends Component {
               // console.log(this.state.checkCount);
               this.checkCountStatus();
             };
-          };
+          }else {
+            if (i === (this.state.undeVoters.length) - 1) {
+              let checkCount = ((this.state.checkCount) + 1);
+              this.setState({ checkCount });
+              console.log("No user found");
+              // console.log(checkCount);
+              // console.log(this.state.checkCount);
+              this.checkCountStatus();
+            }
+          }
         })
     }
   // _____________________ TESTS _________________________
@@ -502,7 +511,7 @@ class App extends Component {
       API.getUser(this.state.noVoters[i])
         .then(res => {
           let user = res.data[0];
-          // console.log(res);
+          console.log(res);
           if (res.data[0]) {
             console.log(res.data[0])
   // _____________________ AGE ___________________________
@@ -766,7 +775,16 @@ class App extends Component {
               // console.log(this.state.checkCount);
               this.checkCountStatus();
             }
-          };
+          }else {
+            if (i === (this.state.undeVoters.length) - 1) {
+              let checkCount = ((this.state.checkCount) + 1);
+              this.setState({ checkCount });
+              console.log("No user found");
+              // console.log(checkCount);
+              // console.log(this.state.checkCount);
+              this.checkCountStatus();
+            }
+          }
         })
     }
   // _____________________ TESTS _________________________
@@ -846,7 +864,7 @@ class App extends Component {
       API.getUser(this.state.undeVoters[i])
         .then(res => {
           let user = res.data[0];
-          // console.log(res);
+          console.log(res);
           if (res.data[0]) {
             console.log(res.data[0])
   // _____________________ AGE ___________________________
@@ -1111,7 +1129,16 @@ class App extends Component {
               // console.log(this.state.checkCount);
               this.checkCountStatus();
             }
-          };
+          }else {
+            if (i === (this.state.undeVoters.length) - 1) {
+              let checkCount = ((this.state.checkCount) + 1);
+              this.setState({ checkCount });
+              console.log("No user found");
+              // console.log(checkCount);
+              // console.log(this.state.checkCount);
+              this.checkCountStatus();
+            }
+          }
         })
     }
   // _____________________ TESTS _________________________
