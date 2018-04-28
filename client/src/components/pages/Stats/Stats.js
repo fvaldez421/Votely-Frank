@@ -93,7 +93,7 @@ class App extends Component {
   }
 
   getYesVoters() {
-    // console.log("getting yessers");
+    console.log("getting yessers");
     let yesAge = {
       One: [],
       Two: [],
@@ -158,7 +158,7 @@ class App extends Component {
           // console.log(i);
           // console.log(res);
           if (res.data[0]) {
-            // console.log(res.data[0]);
+            console.log(res.data[0]);
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -440,7 +440,7 @@ class App extends Component {
   };
 
   getNoVoters() {
-    // console.log("getting noers");
+    console.log("getting noers");
     let noAge = {
       One: [],
       Two: [],
@@ -503,7 +503,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(res);
           if (res.data[0]) {
-            // console.log(res.data[0])
+            console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -784,7 +784,7 @@ class App extends Component {
   };
 
   getUndeVoters() {
-    // console.log("getting undeVoters");
+    console.log("getting undeVoters");
     let undeAge = {
       One: [],
       Two: [],
@@ -847,7 +847,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(res);
           if (res.data[0]) {
-            // console.log(res.data[0])
+            console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -1129,8 +1129,9 @@ class App extends Component {
   }
 
   checkCountStatus() {
+    console.log(this.state.checkCount);
     if (this.state.checkCount === 3){
-      // console.log("Check count at 3");
+      console.log("Check count at 3");
       this.dotThenFuncs();
     }
   }
