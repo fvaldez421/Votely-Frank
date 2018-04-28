@@ -74,6 +74,7 @@ class App extends Component {
 
         if (this.state.noVoters.length > 0) {
           this.getNoVoters();
+        }else {
           let checkCount = ((this.state.checkCount) + 1);
           this.setState({ checkCount });
           console.log("No Switch");
@@ -157,9 +158,9 @@ class App extends Component {
           let user = res.data[0];
           // console.log(this.state.yesVoters);
           // console.log(i);
-          console.log(res);
+          // console.log(res);
           if (res.data[0]) {
-            console.log(res.data[0]);
+            // console.log(res.data[0]);
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -417,7 +418,7 @@ class App extends Component {
             if (i === (this.state.yesVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              console.log("Loop Done");
+              // console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -426,7 +427,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              console.log("No user found");
+              // console.log("No user found");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -511,9 +512,9 @@ class App extends Component {
       API.getUser(this.state.noVoters[i])
         .then(res => {
           let user = res.data[0];
-          console.log(res);
+          // console.log(res);
           if (res.data[0]) {
-            console.log(res.data[0])
+            // console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -770,7 +771,7 @@ class App extends Component {
             if (i === (this.state.noVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              console.log("Loop Done");
+              // console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -779,7 +780,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              console.log("No user found");
+              // console.log("No user found");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -864,9 +865,9 @@ class App extends Component {
       API.getUser(this.state.undeVoters[i])
         .then(res => {
           let user = res.data[0];
-          console.log(res);
+          // console.log(res);
           if (res.data[0]) {
-            console.log(res.data[0])
+            // console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -1124,7 +1125,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              console.log("Loop Done");
+              // console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -1133,7 +1134,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              console.log("No user found");
+              // console.log("No user found");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -1157,9 +1158,9 @@ class App extends Component {
   }
 
   checkCountStatus() {
-    console.log(this.state.checkCount);
+    // console.log(this.state.checkCount);
     if (this.state.checkCount === 3){
-      console.log("Check count at 3");
+      // console.log("Check count at 3");
       this.dotThenFuncs();
     }
   }

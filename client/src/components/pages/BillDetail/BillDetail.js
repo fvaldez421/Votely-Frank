@@ -32,7 +32,7 @@ class BillDetail extends Component {
 		API.checkBill(this.state.bill_id)
 			.then(res => {
 				this.setState({ bill: res.data[0] });
-				console.log(this.state.bill);
+				// console.log(this.state.bill);
 				if (this.state.bill.votes_no.includes(this.state.userId)) {
 					this.setState({ voted: true })
 				}else if (this.state.bill.votes_yes.includes(this.state.userId)) {
