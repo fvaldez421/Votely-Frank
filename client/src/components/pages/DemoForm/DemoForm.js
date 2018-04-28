@@ -38,12 +38,12 @@ class DemoForm extends Component {
 			API.saveUser({
 				userId: this.props.userId,
 				userName: this.props.userName,
-				age: this.state.age,
-				gender: this.state.gender,
-				education: this.state.education,
-				income: this.state.income,
-				race: this.state.race,
-				region: this.state.region
+				age: (this.state.age).toString(),
+				gender: (this.state.gender).toString(),
+				education: (this.state.education).toString(),
+				income: (this.state.income).toString(),
+				race: (this.state.race).toString(),
+				region: (this.state.region).toString()
 			})
 			.then(res => {
 				console.log("User stored");
@@ -53,12 +53,12 @@ class DemoForm extends Component {
 			.catch(err => console.log(err));
 		}else {
 			API.updateUser( this.state.userId, {
-				age: this.state.age,
-				gender: this.state.gender,
-				education: this.state.education,
-				income: this.state.income,
-				race: this.state.race,
-				region: this.state.region
+				age: (this.state.age).toString(),
+				gender: (this.state.gender).toString(),
+				education: (this.state.education).toString(),
+				income: (this.state.income).toString(),
+				race: (this.state.race).toString(),
+				region: (this.state.region).toString()
 			})
 			.then(res => {
 				console.log("Updated user");
@@ -150,7 +150,7 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Region</label>
 									<select onChange={this.handleChange} name="region" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="w">Western</option>
+										<option value="1">Western</option>
 										<option value="2">Mid-Western</option>
 										<option value="3">South-Western</option>
 										<option value="4">North-Eastern</option>

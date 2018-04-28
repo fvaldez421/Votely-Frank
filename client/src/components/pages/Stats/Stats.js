@@ -328,7 +328,7 @@ class App extends Component {
             };
   // _____________________ REGION ________________________
             switch(user.region) {
-              case "w":
+              case "1":
               yesReg.One.push(user.userId);
               break;
 
@@ -682,7 +682,7 @@ class App extends Component {
             };
   // _____________________ REGION ________________________
             switch(user.region) {
-              case "w":
+              case "1":
               noReg.One.push(user.userId);
               break;
 
@@ -1035,7 +1035,7 @@ class App extends Component {
             };
   // _____________________ REGION ________________________
             switch(user.region) {
-              case "w":
+              case "1":
               undeReg.One.push(user.userId);
               break;
 
