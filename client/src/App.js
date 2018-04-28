@@ -45,7 +45,7 @@ class App extends Component {
     }else {
       this.setState({ userExist: false });
     };
-    console.log(this.state);
+    // console.log(this.state);
   }
 // <<<<<handle change in state, state controls which button is displayed>>>>>
   handleLoginClick(response) {
@@ -56,7 +56,7 @@ class App extends Component {
       this.setState({ isLoggedIn: true, userId: response.getId(), userName: response.w3.ig });
       this.getUser();
     }
-    console.log(this.state);
+    // console.log(this.state);
   }
   
   handleLogoutClick() {

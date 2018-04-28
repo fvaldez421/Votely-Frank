@@ -59,10 +59,10 @@ class App extends Component {
           noVoters: res.data[0].votes_no,
           undeVoters: res.data[0].votes_undecided
         });
-        console.log(res.data[0]);
-        console.log(this.state.yesVoters);
-        console.log(this.state.noVoters);
-        console.log(this.state.undeVoters);
+        // console.log(res.data[0]);
+        // console.log(this.state.yesVoters);
+        // console.log(this.state.noVoters);
+        // console.log(this.state.undeVoters);
         if (this.state.yesVoters.length > 0) {
           this.getYesVoters();
         }else {
@@ -154,9 +154,9 @@ class App extends Component {
       API.getUser(this.state.yesVoters[i])
         .then(res => {
           let user = res.data[0];
-          console.log(this.state.yesVoters);
-          console.log(i);
-          console.log(res);
+          // console.log(this.state.yesVoters);
+          // console.log(i);
+          // console.log(res);
           if (res.data[0]) {
             // console.log(res.data[0]);
   // _____________________ AGE ___________________________
@@ -503,7 +503,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(res);
           if (res.data[0]) {
-            console.log(res.data[0])
+            // console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -847,7 +847,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(res);
           if (res.data[0]) {
-            console.log(res.data[0])
+            // console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
               case "1":
@@ -1501,7 +1501,7 @@ class App extends Component {
     });
     this.setState({ stateUpdated: true });
     console.log("done");
-    console.log(this.state.stateUpdated);
+    // console.log(this.state.stateUpdated);
   }
 
 
