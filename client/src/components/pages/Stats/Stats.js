@@ -77,7 +77,7 @@ class App extends Component {
         }else {
           let checkCount = ((this.state.checkCount) + 1);
           this.setState({ checkCount });
-          console.log("No Switch");
+          // console.log("No Switch");
           // console.log(this.state.checkCount);
           this.checkCountStatus();
         }
@@ -87,7 +87,7 @@ class App extends Component {
         }else {
           let checkCount = ((this.state.checkCount) + 1);
             this.setState({ checkCount });
-          console.log("Unde Switch");
+          // console.log("Unde Switch");
             // console.log(this.state.checkCount);
             this.checkCountStatus();
         }
@@ -95,7 +95,7 @@ class App extends Component {
   }
 
   getYesVoters() {
-    console.log("getting yessers");
+    // console.log("getting yessers");
     let yesAge = {
       One: [],
       Two: [],
@@ -451,7 +451,7 @@ class App extends Component {
   };
 
   getNoVoters() {
-    console.log("getting noers");
+    // console.log("getting noers");
     let noAge = {
       One: [],
       Two: [],
@@ -804,7 +804,7 @@ class App extends Component {
   };
 
   getUndeVoters() {
-    console.log("getting undeVoters");
+    // console.log("getting undeVoters");
     let undeAge = {
       One: [],
       Two: [],
@@ -1530,7 +1530,7 @@ class App extends Component {
       }
     });
     this.setState({ stateUpdated: true });
-    console.log("done");
+    // console.log("done");
     // console.log(this.state.stateUpdated);
   }
 
