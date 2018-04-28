@@ -30,3 +30,7 @@ h1{
 a{
   color:#fff
 }
+
+.showNone {
+  display: none;
+}

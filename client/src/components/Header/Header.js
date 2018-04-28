@@ -21,49 +21,41 @@ const Header = (props) => (
 				{props.isLoggedIn && props.userExist ?
 					(<li className="nav-item"><a className="nav-link" href="/demoform">Me</a></li>)
 					:
-					(<p></p>)
+					(<p className="showNone"></p>)
 				}
 
 
 				{!props.isLoggedIn ?
 					(
-						<p>
 						<li className="nav-item"><a className="nav-link" href="/bills">Bills</a></li>
-						</p>
 					)
 					:
-					(<p></p>)
+					(<p className="showNone"></p>)
 				}
 				{!props.isLoggedIn ?
 					(
-						<p>
 						<li className="nav-item"><a className="nav-link" href="/about">About</a></li>
-						</p>
 					)
 					:
-					(<p></p>)
+					(<p className="showNone"></p>)
 				}
 
 
 				{props.isLoggedIn && props.userExist ?
 					(
-						<p>
 						<li className="nav-item"><a className="nav-link" href="/bills">Bills</a></li>
-						</p>
 					)
 					:
-					(<p></p>)
+					(<p className="showNone"></p>)
 				}
 				{props.isLoggedIn && props.userExist ?
 					(
-						<p>
 						<li className="nav-item"><a className="nav-link" href="/about">About</a></li>
-						</p>
 					)
 					:
-					(<p></p>)
+					(<p className="showNone"></p>)
 				}
-
+				
 				<LoginControl 
 					handleLoginClick={props.handleLoginClick}
 					handleLogoutClick={props.handleLogoutClick}
