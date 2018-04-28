@@ -74,9 +74,9 @@ class App extends Component {
 
         if (this.state.noVoters.length > 0) {
           this.getNoVoters();
-        }else {
           let checkCount = ((this.state.checkCount) + 1);
           this.setState({ checkCount });
+          console.log("No Switch");
           // console.log(this.state.checkCount);
           this.checkCountStatus();
         }
@@ -86,6 +86,7 @@ class App extends Component {
         }else {
           let checkCount = ((this.state.checkCount) + 1);
             this.setState({ checkCount });
+          console.log("Unde Switch");
             // console.log(this.state.checkCount);
             this.checkCountStatus();
         }
