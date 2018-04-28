@@ -150,8 +150,8 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Region</label>
 									<select onChange={this.handleChange} name="region" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
+										<option value="w">Western</option>
 										<option value="2">Mid-Western</option>
-										<option value="1">Western</option>
 										<option value="3">South-Western</option>
 										<option value="4">North-Eastern</option>
 										<option value="5">South-Eastern</option>
