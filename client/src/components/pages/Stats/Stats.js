@@ -416,7 +416,7 @@ class App extends Component {
             if (i === (this.state.yesVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("Loop Done");
+              console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -760,7 +760,7 @@ class App extends Component {
             if (i === (this.state.noVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("Loop Done");
+              console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -1105,7 +1105,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("Loop Done");
+              console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
