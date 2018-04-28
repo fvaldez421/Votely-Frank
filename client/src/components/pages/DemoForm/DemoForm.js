@@ -21,7 +21,7 @@ class DemoForm extends Component {
 			let userId = window.sessionStorage.getItem("user");
 			let userExist = JSON.parse(window.sessionStorage.getItem("userExist"));
 			this.setState({ 
-				userId: userId, 
+				userId, 
 				userExist
 			});
 		}
@@ -47,7 +47,8 @@ class DemoForm extends Component {
 				region: this.state.region
 			})
 			.then(res => {
-				console.log("User stored")
+				console.log("User stored");
+				console.log(this.state);
 				this.props.getUser(this.props.userId);
 			})
 			.catch(err => console.log(err));
@@ -60,7 +61,10 @@ class DemoForm extends Component {
 				race: this.state.race,
 				region: this.state.region
 			})
-			.then(res => console.log("Updates user"))
+			.then(res => {
+				console.log("Updated user");
+				console.log(this.state);
+			})
 			.catch(err => console.log(err))
 		}
 		
