@@ -46,7 +46,10 @@ class DemoForm extends Component {
 				race: this.state.race,
 				region: this.state.region
 			})
-			.then(res => console.log("Demos stored"))
+			.then(res => {
+				console.log("Demos stored")
+				this.props.getUser(this.props.userId);
+			})
 			.catch(err => console.log(err));
 		} else {
 			API.updateUser( this.state.userId, {

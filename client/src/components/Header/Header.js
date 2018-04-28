@@ -16,13 +16,54 @@ const Header = (props) => (
 
 		<div className="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul className="navbar-nav ml-auto">
-				{props.isLoggedIn ?
+
+
+				{props.isLoggedIn && props.userExist ?
 					(<li className="nav-item"><a className="nav-link" href="/demoform">Me</a></li>)
 					:
 					(<p></p>)
 				}
-				<li className="nav-item"><a className="nav-link" href="/bills">Bills</a></li>
-				<li className="nav-item"><a className="nav-link" href="/about">About</a></li>
+
+
+				{!props.isLoggedIn ?
+					(
+						<p>
+						<li className="nav-item"><a className="nav-link" href="/bills">Bills</a></li>
+						</p>
+					)
+					:
+					(<p></p>)
+				}
+				{!props.isLoggedIn ?
+					(
+						<p>
+						<li className="nav-item"><a className="nav-link" href="/about">About</a></li>
+						</p>
+					)
+					:
+					(<p></p>)
+				}
+
+
+				{props.isLoggedIn && props.userExist ?
+					(
+						<p>
+						<li className="nav-item"><a className="nav-link" href="/bills">Bills</a></li>
+						</p>
+					)
+					:
+					(<p></p>)
+				}
+				{props.isLoggedIn && props.userExist ?
+					(
+						<p>
+						<li className="nav-item"><a className="nav-link" href="/about">About</a></li>
+						</p>
+					)
+					:
+					(<p></p>)
+				}
+
 				<LoginControl 
 					handleLoginClick={props.handleLoginClick}
 					handleLogoutClick={props.handleLogoutClick}

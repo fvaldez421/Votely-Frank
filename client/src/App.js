@@ -37,7 +37,7 @@ class App extends Component {
       // console.log("logging in!");
     }else {
       this.setState({ isLoggedIn: false });
-      this.handleLogoutClick();
+      // this.handleLogoutClick();
       // console.log(window.sessionStorage.getItem("loggedIn"));
     };
     if (JSON.parse(userBool) === true) {
@@ -45,6 +45,7 @@ class App extends Component {
     }else {
       this.setState({ userExist: false });
     };
+    console.log(this.state);
   }
 // <<<<<handle change in state, state controls which button is displayed>>>>>
   handleLoginClick(response) {
@@ -54,8 +55,8 @@ class App extends Component {
       window.sessionStorage.setItem("user", response.getId());
       this.setState({ isLoggedIn: true, userId: response.getId(), userName: response.w3.ig });
       this.getUser();
-
     }
+    console.log(this.state);
   }
   
   handleLogoutClick() {
@@ -63,6 +64,7 @@ class App extends Component {
     window.sessionStorage.setItem("loggedIn", false);
     window.sessionStorage.setItem("userExist", false);
     // console.log("logging user out");
+    console.log(this.state);
   }
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   getUser(id) {
@@ -77,7 +79,7 @@ class App extends Component {
       .then(res => {
         // console.log(res.data);
         if (res.data[0]) {
-          window.sessionStorage.setItem("userExist", true);
+          // window.sessionStorage.setItem("userExist", true);
           if (this.state){
             this.setState({ userExist: true });            
           }
@@ -96,8 +98,9 @@ class App extends Component {
             handleLoginClick={this.handleLoginClick}
             handleLogoutClick={this.handleLogoutClick}
             isLoggedIn={this.state.isLoggedIn}
-            button={this.state.button}
             userId={this.state.userId}
+            userExist={this.state.userExist}
+            getUser={this.getUser()}
           />
           <Route exact path="/" 
             render={() => this.state.isLoggedIn ? 
