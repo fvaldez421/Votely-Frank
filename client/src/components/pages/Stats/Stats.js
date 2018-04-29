@@ -7,6 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      voteNum: 0,
       checkCount: 0,
       stateUpdated: false,
 
@@ -59,6 +60,7 @@ class App extends Component {
           noVoters: res.data[0].votes_no,
           undeVoters: res.data[0].votes_undecided
         });
+        this.setState({ voteNum: (this.state.yesVoters.length) + (this.state.noVoters.length) + (this.state.undeVoters.length) })
         console.log(res.data[0]);
         // console.log(this.state.yesVoters);
         // console.log(this.state.noVoters);
@@ -66,8 +68,8 @@ class App extends Component {
         if (this.state.yesVoters.length > 0) {
           this.getYesVoters();
         }else {
-          let checkCount = ((this.state.checkCount) + 1);
-          this.setState({ checkCount });
+          // let checkCount = ((this.state.checkCount) + 1);
+          // this.setState({ checkCount });
           // console.log(this.state.checkCount);
           this.checkCountStatus();
         }
@@ -75,8 +77,8 @@ class App extends Component {
         if (this.state.noVoters.length > 0) {
           this.getNoVoters();
         }else {
-          let checkCount = ((this.state.checkCount) + 1);
-          this.setState({ checkCount });
+          // let checkCount = ((this.state.checkCount) + 1);
+          // this.setState({ checkCount });
           // console.log("No Switch");
           // console.log(this.state.checkCount);
           this.checkCountStatus();
@@ -85,8 +87,8 @@ class App extends Component {
         if (this.state.undeVoters.length > 0) {
           this.getUndeVoters();
         }else {
-          let checkCount = ((this.state.checkCount) + 1);
-            this.setState({ checkCount });
+          // let checkCount = ((this.state.checkCount) + 1);
+          //   this.setState({ checkCount });
           // console.log("Unde Switch");
             // console.log(this.state.checkCount);
             this.checkCountStatus();
@@ -423,7 +425,7 @@ class App extends Component {
             if (i === (this.state.yesVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("Loop Done");
+              console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -432,7 +434,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("No user found");
+              console.log("No user found");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -782,7 +784,7 @@ class App extends Component {
             if (i === (this.state.noVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("Loop Done");
+              console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -791,7 +793,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("No user found");
+              console.log("No user found");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -1141,7 +1143,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("Loop Done");
+              console.log("Loop Done");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -1150,7 +1152,7 @@ class App extends Component {
             if (i === (this.state.undeVoters.length) - 1) {
               let checkCount = ((this.state.checkCount) + 1);
               this.setState({ checkCount });
-              // console.log("No user found");
+              console.log("No user found");
               // console.log(checkCount);
               // console.log(this.state.checkCount);
               this.checkCountStatus();
@@ -1174,9 +1176,10 @@ class App extends Component {
   }
 
   checkCountStatus() {
-    // console.log(this.state.checkCount);
-    if (this.state.checkCount === 3){
-      // console.log("Check count at 3");
+    console.log(this.state.checkCount);
+    console.log(this.state.voteNum);
+    if (this.state.checkCount === this.state.voteNum){
+      console.log("Check count at voteNum");
       this.dotThenFuncs();
     }
   }
