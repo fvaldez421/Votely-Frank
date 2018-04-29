@@ -72,30 +72,19 @@ class App extends Component {
         if (this.state.yesVoters.length > 0) {
           this.getYesVoters();
         }else {
-          // let checkCount = ((this.state.checkCount) + 1);
-          // this.setState({ checkCount });
-          // console.log(this.state.checkCount);
           this.checkCountStatus();
         }
 
         if (this.state.noVoters.length > 0) {
           this.getNoVoters();
         }else {
-          // let checkCount = ((this.state.checkCount) + 1);
-          // this.setState({ checkCount });
-          // console.log("No Switch");
-          // console.log(this.state.checkCount);
           this.checkCountStatus();
         }
 
         if (this.state.undeVoters.length > 0) {
           this.getUndeVoters();
         }else {
-          // let checkCount = ((this.state.checkCount) + 1);
-          //   this.setState({ checkCount });
-          // console.log("Unde Switch");
-            // console.log(this.state.checkCount);
-            this.checkCountStatus();
+          this.checkCountStatus();
         }
       })
   }
@@ -426,23 +415,19 @@ class App extends Component {
             // console.log(yesAge.One);
             // console.log(yesAge.One.length);
             // console.log(this.state.ageYes);
-            // if (i === (this.state.yesVoters.length) - 1) {
-              let checkCount = ((this.state.checkCount) + 1);
-              this.setState({ checkCount });
-              console.log("User Found");
-              // console.log(checkCount);
-              // console.log(this.state.checkCount);
-              this.checkCountStatus();
-            // };
+            let checkCount = ((this.state.checkCount) + 1);
+            this.setState({ checkCount });
+            // console.log("User Found");
+            // console.log(checkCount);
+            // console.log(this.state.checkCount);
+            this.checkCountStatus();
           }else {
-            // if (i === (this.state.yesVoters.length) - 1) {
-              let checkCount = ((this.state.checkCount) + 1);
-              this.setState({ checkCount });
-              console.log("No user found");
-              // console.log(checkCount);
-              // console.log(this.state.checkCount);
-              this.checkCountStatus();
-            // }
+            let checkCount = ((this.state.checkCount) + 1);
+            this.setState({ checkCount });
+            // console.log("No user found");
+            // console.log(checkCount);
+            // console.log(this.state.checkCount);
+            this.checkCountStatus();
           }
         })
     }
@@ -785,23 +770,19 @@ class App extends Component {
             // console.log(noAge.One);
             // console.log(noAge.One.length);
             // console.log(this.state.ageNo);
-            // if (i === (this.state.noVoters.length) - 1) {
-              let checkCount = ((this.state.checkCount) + 1);
-              this.setState({ checkCount });
-              console.log("User Found");
-              // console.log(checkCount);
-              // console.log(this.state.checkCount);
-              this.checkCountStatus();
-            // }
+            let checkCount = ((this.state.checkCount) + 1);
+            this.setState({ checkCount });
+            // console.log("User Found");
+            // console.log(checkCount);
+            // console.log(this.state.checkCount);
+            this.checkCountStatus();
           }else {
-            // if (i === (this.state.noVoters.length) - 1) {
-              let checkCount = ((this.state.checkCount) + 1);
-              this.setState({ checkCount });
-              console.log("No user found");
-              // console.log(checkCount);
-              // console.log(this.state.checkCount);
-              this.checkCountStatus();
-            // }
+            let checkCount = ((this.state.checkCount) + 1);
+            this.setState({ checkCount });
+            // console.log("No user found");
+            // console.log(checkCount);
+            // console.log(this.state.checkCount);
+            this.checkCountStatus();
           }
         })
     }
@@ -1144,23 +1125,19 @@ class App extends Component {
             // console.log(undeAge.One);
             // console.log(undeAge.One.length);
             // console.log(this.state.ageUnde);
-            // if (i === (this.state.undeVoters.length) - 1) {
-              let checkCount = ((this.state.checkCount) + 1);
-              this.setState({ checkCount });
-              console.log("User Found");
-              // console.log(checkCount);
-              // console.log(this.state.checkCount);
-              this.checkCountStatus();
-            // }
+            let checkCount = ((this.state.checkCount) + 1);
+            this.setState({ checkCount });
+            // console.log("User Found");
+            // console.log(checkCount);
+            // console.log(this.state.checkCount);
+            this.checkCountStatus();
           }else {
-            // if (i === (this.state.undeVoters.length) - 1) {
-              let checkCount = ((this.state.checkCount) + 1);
-              this.setState({ checkCount });
-              console.log("No user found");
-              // console.log(checkCount);
-              // console.log(this.state.checkCount);
-              this.checkCountStatus();
-            // }
+            let checkCount = ((this.state.checkCount) + 1);
+            this.setState({ checkCount });
+            // console.log("No user found");
+            // console.log(checkCount);
+            // console.log(this.state.checkCount);
+            this.checkCountStatus();
           }
         })
     }
