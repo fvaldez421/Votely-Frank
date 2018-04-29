@@ -60,8 +60,12 @@ class App extends Component {
           noVoters: res.data[0].votes_no,
           undeVoters: res.data[0].votes_undecided
         });
-        this.setState({ voteNum: (this.state.yesVoters.length) + (this.state.noVoters.length) + (this.state.undeVoters.length) })
-        console.log(res.data[0]);
+        this.setState({ 
+          voteNum: (this.state.yesVoters.length) 
+            + (this.state.noVoters.length) 
+            + (this.state.undeVoters.length) 
+        })
+        // console.log(res.data[0]);
         // console.log(this.state.yesVoters);
         // console.log(this.state.noVoters);
         // console.log(this.state.undeVoters);
@@ -160,7 +164,7 @@ class App extends Component {
           let user = res.data[0];
           // console.log(this.state.yesVoters);
           // console.log(i);
-          console.log(res);
+          // console.log(res);
           if (res.data[0]) {
             // console.log(res.data[0]);
   // _____________________ AGE ___________________________
@@ -520,7 +524,7 @@ class App extends Component {
       API.getUser(this.state.noVoters[i])
         .then(res => {
           let user = res.data[0];
-          console.log(res);
+          // console.log(res);
           if (res.data[0]) {
             // console.log(res.data[0])
   // _____________________ AGE ___________________________
@@ -878,7 +882,7 @@ class App extends Component {
       API.getUser(this.state.undeVoters[i])
         .then(res => {
           let user = res.data[0];
-          console.log(res);
+          // console.log(res);
           if (res.data[0]) {
             // console.log(res.data[0])
   // _____________________ AGE ___________________________
@@ -1176,10 +1180,10 @@ class App extends Component {
   }
 
   checkCountStatus() {
-    console.log(this.state.checkCount);
-    console.log(this.state.voteNum);
+    // console.log(this.state.checkCount);
+    // console.log(this.state.voteNum);
     if (this.state.checkCount === this.state.voteNum){
-      console.log("Check count at voteNum");
+      // console.log("Check count at voteNum");
       this.dotThenFuncs();
     }
   }
