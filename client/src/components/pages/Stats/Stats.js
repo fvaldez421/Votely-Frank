@@ -378,6 +378,7 @@ class App extends Component {
                 yesInc.Four.length,
                 yesInc.Five.length,
                 yesInc.Six.length,
+                yesInc.Seven.length,
                 yesInc.pns.length
               ],
               genYes: [ 
@@ -472,6 +473,7 @@ class App extends Component {
       Four: [],
       Five: [],
       Six: [],
+      Seven: [],
       pns: []
     };
     let noGen = {
@@ -735,6 +737,7 @@ class App extends Component {
                 noInc.Four.length,
                 noInc.Five.length,
                 noInc.Six.length,
+                noInc.Seven.length,
                 noInc.pns.length
               ],
               genNo: [ 
@@ -1093,6 +1096,7 @@ class App extends Component {
                 undeInc.Four.length,
                 undeInc.Five.length,
                 undeInc.Six.length,
+                undeInc.Seven.length,
                 undeInc.pns.length
               ],
               genUnde: [ 
