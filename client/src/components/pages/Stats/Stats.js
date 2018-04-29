@@ -1276,6 +1276,7 @@ class App extends Component {
               'rgba(0, 123, 255, 1)',
               'rgba(0, 123, 255, 1)',
               'rgba(0, 123, 255, 1)',
+              'rgba(0, 123, 255, 1)',
               'rgba(0, 123, 255, 1)'
             ]
           },
@@ -1290,6 +1291,7 @@ class App extends Component {
               'rgba(251, 34, 89, 1)',
               'rgba(251, 34, 89, 1)',
               'rgba(251, 34, 89, 1)',
+              'rgba(251, 34, 89, 1)',
               'rgba(251, 34, 89, 1)'
             ]
           },
@@ -1298,6 +1300,7 @@ class App extends Component {
             label:'Undecided',
             data: this.state.incUnde,
             backgroundColor:[
+              'rgba(255, 240, 200, 1)',
               'rgba(255, 240, 200, 1)',
               'rgba(255, 240, 200, 1)',
               'rgba(255, 240, 200, 1)',
