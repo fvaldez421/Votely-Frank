@@ -163,27 +163,27 @@ class App extends Component {
             // console.log(res.data[0]);
   // _____________________ AGE ___________________________
             switch(user.age) {
-              case "1":
+              case "one":
               yesAge.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               yesAge.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               yesAge.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               yesAge.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               yesAge.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               yesAge.Six.push(user.userId);
               break;
 
@@ -196,27 +196,27 @@ class App extends Component {
             };
   // _____________________ INCOME ________________________
             switch(user.income) {
-              case "1":
+              case "one":
               yesInc.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               yesInc.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               yesInc.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               yesInc.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               yesInc.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               yesInc.Six.push(user.userId);
               break;
 
@@ -229,19 +229,19 @@ class App extends Component {
             };
   // _____________________ GENDER ________________________
             switch(user.gender) {
-              case "1":
+              case "one":
               yesGen.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               yesGen.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               yesGen.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               yesGen.Four.push(user.userId);
               break;
 
@@ -254,31 +254,31 @@ class App extends Component {
             };
   // _____________________ EDUCATION _____________________
             switch(user.education) {
-              case "1":
+              case "one":
               yesEdu.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               yesEdu.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               yesEdu.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               yesEdu.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               yesEdu.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               yesEdu.Six.push(user.userId);
               break;
 
-              case "7":
+              case "seven":
               yesEdu.Seven.push(user.userId);
               break;
 
@@ -291,31 +291,31 @@ class App extends Component {
             };
   // _____________________ RACE __________________________
             switch(user.race) {
-              case "1":
+              case "one":
               yesRa.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               yesRa.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               yesRa.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               yesRa.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               yesRa.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               yesRa.Six.push(user.userId);
               break;
 
-              case "7":
+              case "seven":
               yesRa.Seven.push(user.userId);
               break;
 
@@ -328,23 +328,23 @@ class App extends Component {
             };
   // _____________________ REGION ________________________
             switch(user.region) {
-              case "1":
+              case "one":
               yesReg.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               yesReg.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               yesReg.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               yesReg.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               yesReg.Five.push(user.userId);
               break;
 
@@ -517,27 +517,27 @@ class App extends Component {
             // console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
-              case "1":
+              case "one":
               noAge.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               noAge.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               noAge.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               noAge.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               noAge.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               noAge.Six.push(user.userId);
               break;
 
@@ -550,27 +550,27 @@ class App extends Component {
             };
   // _____________________ INCOME ________________________
             switch(user.income) {
-              case "1":
+              case "one":
               noInc.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               noInc.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               noInc.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               noInc.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               noInc.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               noInc.Six.push(user.userId);
               break;
 
@@ -583,19 +583,19 @@ class App extends Component {
             };
   // _____________________ GENDER ________________________
             switch(user.gender) {
-              case "1":
+              case "one":
               noGen.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               noGen.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               noGen.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               noGen.Four.push(user.userId);
               break;
 
@@ -608,31 +608,31 @@ class App extends Component {
             };
   // _____________________ EDUCATION _____________________
             switch(user.education) {
-              case "1":
+              case "one":
               noEdu.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               noEdu.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               noEdu.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               noEdu.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               noEdu.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               noEdu.Six.push(user.userId);
               break;
 
-              case "7":
+              case "seven":
               noEdu.Seven.push(user.userId);
               break;
 
@@ -645,31 +645,31 @@ class App extends Component {
             };
   // _____________________ RACE __________________________
             switch(user.race) {
-              case "1":
+              case "one":
               noRa.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               noRa.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               noRa.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               noRa.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               noRa.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               noRa.Six.push(user.userId);
               break;
 
-              case "7":
+              case "seven":
               noRa.Seven.push(user.userId);
               break;
 
@@ -682,23 +682,23 @@ class App extends Component {
             };
   // _____________________ REGION ________________________
             switch(user.region) {
-              case "1":
+              case "one":
               noReg.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               noReg.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               noReg.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               noReg.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               noReg.Five.push(user.userId);
               break;
 
@@ -870,27 +870,27 @@ class App extends Component {
             // console.log(res.data[0])
   // _____________________ AGE ___________________________
             switch(user.age) {
-              case "1":
+              case "one":
               undeAge.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               undeAge.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               undeAge.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               undeAge.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               undeAge.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               undeAge.Six.push(user.userId);
               break;
 
@@ -903,27 +903,27 @@ class App extends Component {
             };
   // _____________________ INCOME ________________________
             switch(user.income) {
-              case "1":
+              case "one":
               undeInc.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               undeInc.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               undeInc.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               undeInc.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               undeInc.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               undeInc.Six.push(user.userId);
               break;
 
@@ -936,19 +936,19 @@ class App extends Component {
             };
   // _____________________ GENDER ________________________
             switch(user.gender) {
-              case "1":
+              case "one":
               undeGen.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               undeGen.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               undeGen.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               undeGen.Four.push(user.userId);
               break;
 
@@ -961,31 +961,31 @@ class App extends Component {
             };
   // _____________________ EDUCATION _____________________
             switch(user.education) {
-              case "1":
+              case "one":
               undeEdu.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               undeEdu.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               undeEdu.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               undeEdu.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               undeEdu.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               undeEdu.Six.push(user.userId);
               break;
 
-              case "7":
+              case "seven":
               undeEdu.Seven.push(user.userId);
               break;
 
@@ -998,31 +998,31 @@ class App extends Component {
             };
   // _____________________ RACE __________________________
             switch(user.race) {
-              case "1":
+              case "one":
               undeRa.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               undeRa.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               undeRa.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               undeRa.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               undeRa.Five.push(user.userId);
               break;
 
-              case "6":
+              case "six":
               undeRa.Six.push(user.userId);
               break;
 
-              case "7":
+              case "seven":
               undeRa.Seven.push(user.userId);
               break;
 
@@ -1035,23 +1035,23 @@ class App extends Component {
             };
   // _____________________ REGION ________________________
             switch(user.region) {
-              case "1":
+              case "one":
               undeReg.One.push(user.userId);
               break;
 
-              case "2":
+              case "two":
               undeReg.Two.push(user.userId);
               break;
 
-              case "3":
+              case "three":
               undeReg.Three.push(user.userId);
               break;
 
-              case "4":
+              case "four":
               undeReg.Four.push(user.userId);
               break;
 
-              case "5":
+              case "five":
               undeReg.Five.push(user.userId);
               break;
 

@@ -78,12 +78,12 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Age Range</label>
 									<select onChange={this.handleChange} name="age" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="1">16 - 22</option>
-										<option value="2">22 - 34</option>
-										<option value="3">35 - 44</option>
-										<option value="4">45 - 54</option>
-										<option value="5">55 - 64</option>
-										<option value="6">65 and Older</option>
+										<option value="one">16 - 22</option>
+										<option value="two">22 - 34</option>
+										<option value="three">35 - 44</option>
+										<option value="four">45 - 54</option>
+										<option value="five">55 - 64</option>
+										<option value="six">65 and Older</option>
 									</select>
 								</div>
 					
@@ -91,13 +91,13 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Education Level</label>
 									<select onChange={this.handleChange} name="education" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="1">Some High School</option>
-										<option value="2">High School Graduate or GED</option>
-										<option value="3">Vocational or Trade School</option>
-										<option value="4">Some College</option>
-										<option value="5">Undergraduate Degree</option>
-										<option value="6">Graduate Degree</option>
-										<option value="7">Post Graduate Degree</option>
+										<option value="one">Some High School</option>
+										<option value="two">High School Graduate or GED</option>
+										<option value="three">Vocational or Trade School</option>
+										<option value="four">Some College</option>
+										<option value="five">Undergraduate Degree</option>
+										<option value="six">Graduate Degree</option>
+										<option value="seven">Post Graduate Degree</option>
 									</select>
 								</div>
 					
@@ -107,13 +107,13 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Ethnicity</label>
 									<select onChange={this.handleChange} name="race" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="1">American Indian or Alaska Native</option>
-										<option value="2">Asian</option>
-										<option value="3">Black or African American</option>
-										<option value="4">Hispanic or Latino</option>
-										<option value="5">White</option> 
-										<option value="6">Mixed</option>
-										<option value="7">Native American or Other Pacific Islander</option>
+										<option value="one">American Indian or Alaska Native</option>
+										<option value="two">Asian</option>
+										<option value="three">Black or African American</option>
+										<option value="four">Hispanic or Latino</option>
+										<option value="five">White</option> 
+										<option value="six">Mixed</option>
+										<option value="seven">Native American or Other Pacific Islander</option>
 									</select>
 								</div>
 					
@@ -122,10 +122,10 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Gender</label>
 									<select onChange={this.handleChange} name="gender" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="1">Male</option>
-										<option value="2">Female</option>
-										<option value="3">Trans</option>
-										<option value="4">Other</option>
+										<option value="one">Male</option>
+										<option value="two">Female</option>
+										<option value="three">Trans</option>
+										<option value="four">Other</option>
 									</select>
 								</div>
 					
@@ -134,13 +134,13 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Income Range</label>
 									<select onChange={this.handleChange} name="income" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="1">Under $9,525</option>
-										<option value="2">$9,525 - $38,699</option>
-										<option value="3">$38,700 - $82,499</option>
-										<option value="4">$82,500 - $157,499</option>
-										<option value="5">$157,500 - $199,999</option>
-										<option value="6">$200,000 to $499,999</option>
-										<option value="7">Over $500,000</option>
+										<option value="one">Under $9,525</option>
+										<option value="two">$9,525 - $38,699</option>
+										<option value="three">$38,700 - $82,499</option>
+										<option value="four">$82,500 - $157,499</option>
+										<option value="five">$157,500 - $199,999</option>
+										<option value="six">$200,000 to $499,999</option>
+										<option value="seven">Over $500,000</option>
 									</select>
 								</div>
 					
@@ -150,11 +150,11 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Region</label>
 									<select onChange={this.handleChange} name="region" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="1">Western</option>
-										<option value="2">Mid-Western</option>
-										<option value="3">South-Western</option>
-										<option value="4">North-Eastern</option>
-										<option value="5">South-Eastern</option>
+										<option value="one">Western</option>
+										<option value="two">Mid-Western</option>
+										<option value="three">South-Western</option>
+										<option value="four">North-Eastern</option>
+										<option value="five">South-Eastern</option>
 									</select>
 								</div>
 
