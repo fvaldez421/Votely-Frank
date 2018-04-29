@@ -220,6 +220,10 @@ class App extends Component {
               yesInc.Six.push(user.userId);
               break;
 
+              case "seven":
+              yesInc.Seven.push(user.userId);
+              break;
+
               case "pns" || "":
               yesInc.pns.push(user.userId);
               break;
@@ -572,6 +576,10 @@ class App extends Component {
 
               case "six":
               noInc.Six.push(user.userId);
+              break;
+
+              case "seven":
+              noInc.Seven.push(user.userId);
               break;
 
               case "pns" || "":
@@ -927,6 +935,10 @@ class App extends Component {
               undeInc.Six.push(user.userId);
               break;
 
+              case "seven":
+              undeInc.Seven.push(user.userId);
+              break;
+
               case "pns" || "":
               undeInc.pns.push(user.userId);
               break;
@@ -1178,12 +1190,12 @@ class App extends Component {
     this.setState({
       chartDataAge:{
         labels: [
-          'Under 18yrs', 
-          '18-34yrs', 
-          '35-50yrs', 
-          '51-69yrs', 
-          '70-87yrs', 
-          '88+yrs', 
+          '16-22', 
+          '22-34', 
+          '35-44', 
+          '45-54', 
+          '55-64', 
+          '65+', 
           'No Answer'
           ],
         datasets:[
@@ -1240,12 +1252,13 @@ class App extends Component {
     this.setState({
       chartDataIncome:{
         labels: [
-          '<$9,524', 
+          '<$9,525', 
           '<$38,699', 
           '<$82,499', 
           '<$157,499', 
           '<$199,999', 
           '<$499,999', 
+          '$500,000+',
           'No Answer' 
           ],
         datasets:[
