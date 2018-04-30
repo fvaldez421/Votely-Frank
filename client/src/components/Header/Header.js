@@ -18,7 +18,7 @@ const Header = (props) => (
 			<ul className="navbar-nav ml-auto">
 
 
-				{props.isLoggedIn && props.userExist ?
+				{props.isLoggedIn && props.userExist && props.newDems ?
 					(<li className="nav-item"><a className="nav-link" href="/demoform">Me</a></li>)
 					:
 					(<p className="showNone"></p>)
@@ -41,14 +41,14 @@ const Header = (props) => (
 				}
 
 
-				{props.isLoggedIn && props.userExist ?
+				{props.isLoggedIn && props.userExist && props.newDems ?
 					(
 						<li className="nav-item"><a className="nav-link" href="/bills">Bills</a></li>
 					)
 					:
 					(<p className="showNone"></p>)
 				}
-				{props.isLoggedIn && props.userExist ?
+				{props.isLoggedIn && props.userExist && props.newDems ?
 					(
 						<li className="nav-item"><a className="nav-link" href="/about">About</a></li>
 					)

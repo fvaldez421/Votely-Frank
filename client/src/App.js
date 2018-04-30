@@ -24,7 +24,9 @@ class App extends Component {
       isLoggedIn: false,
       userId: "", 
       userName: "", 
-      userExist: false };
+      userExist: false,
+      newDems: false 
+    };
   }
 
   componentDidMount() {
@@ -64,10 +66,11 @@ class App extends Component {
     window.sessionStorage.setItem("loggedIn", false);
     window.sessionStorage.setItem("userExist", false);
     // console.log("logging user out");
-    console.log(this.state);
+    // console.log(this.state);
   }
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
   getUser(id) {
+    // console.log("Get User");
     let userId;
     if (this.state) {
       userId = this.state.userId; 
@@ -77,17 +80,29 @@ class App extends Component {
 
     API.getUser(userId)
       .then(res => {
-        // console.log(res.data);
+        let valueTest = (res.data[0].age).toString();
+        let valBool = valueTest.includes(1);
+        // console.log(valueTest);
+        // console.log(valBool);
+        // console.log(res.data[0]);
         if (res.data[0]) {
           // window.sessionStorage.setItem("userExist", true);
           if (this.state){
-            this.setState({ userExist: true });            
+            this.setState({ userExist: true }); 
+            // console.log(this.state.userExist);           
           }
+        };
+        // if (valBool) {
+        //   this.setState({ newDems: false });
+        //   console.log(this.state.newDems);
+        // }else 
+        if (!valBool) {
+          this.setState({ newDems: true });
+          // console.log(this.state.newDems);
         };
       })
       .catch(err => console.log(err));
   }
-
 
   render() {
 
@@ -100,12 +115,13 @@ class App extends Component {
             isLoggedIn={this.state.isLoggedIn}
             userId={this.state.userId}
             userExist={this.state.userExist}
+            newDems={this.state.newDems}
             getUser={this.getUser()}
           />
           <Route exact path="/" 
             render={() => this.state.isLoggedIn ? 
               [ 
-                (this.state.userExist) 
+                (this.state.userExist && this.state.newDems) 
                 ? <Redirect to="/region" /> 
                 : <DemoForm 
                   userId={this.state.userId} 

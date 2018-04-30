@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import './Demoform.css';
 
 import API from "../../../utils/API.js"
@@ -9,12 +9,12 @@ class DemoForm extends Component {
 	state = {
 		userId: this.props.userId,
 		userExist: this.props.userExist,
-		age: "",
-		gender: "",
-		education: "",
-		income: "", 
-		race: "", 
-		region: ""
+		age: "pns",
+		gender: "pns",
+		education: "pns",
+		income: "pns", 
+		race: "pns", 
+		region: "pns"
 	};
 	componentDidMount() {
 		if (this.props.userId === "") {
@@ -33,40 +33,55 @@ class DemoForm extends Component {
 	};
 
 	handleFormSubmit = event => {
-		console.log(this.state);
+		// event.preventDefault();
+		// event.stopProbagation();
+		// console.log(event);
+		// console.log(this.state);
+		// debugger;
 		if (!this.props.userExist && this.props.userName) {
 			API.saveUser({
 				userId: this.props.userId,
 				userName: this.props.userName,
-				age: (this.state.age).toString(),
-				gender: (this.state.gender).toString(),
-				education: (this.state.education).toString(),
-				income: (this.state.income).toString(),
-				race: (this.state.race).toString(),
-				region: (this.state.region).toString()
+				age: (this.state.age),
+				gender: (this.state.gender),
+				education: (this.state.education),
+				income: (this.state.income),
+				race: (this.state.race),
+				region: (this.state.region)
 			})
 			.then(res => {
 				console.log("User stored");
 				console.log(this.state);
 				this.props.getUser(this.props.userId);
+				// debugger;
+				// window.location.reload();
 			})
-			.catch(err => console.log(err));
+			.catch(err => {
+				console.log(err);
+				// debugger;
+			});
+
 		}else {
 			API.updateUser( this.state.userId, {
-				age: (this.state.age).toString(),
-				gender: (this.state.gender).toString(),
-				education: (this.state.education).toString(),
-				income: (this.state.income).toString(),
-				race: (this.state.race).toString(),
-				region: (this.state.region).toString()
+				age: (this.state.age),
+				gender: (this.state.gender),
+				education: (this.state.education),
+				income: (this.state.income),
+				race: (this.state.race),
+				region: (this.state.region)
 			})
 			.then(res => {
 				console.log("Updated user");
 				console.log(this.state);
+				// debugger;
+				// window.location.reload();
 			})
-			.catch(err => console.log(err))
+			.catch(err => {
+				console.log(err);
+				// debugger;
+			})
 		}
-		
+		// debugger;
 	};
 
 	render() {
@@ -78,7 +93,7 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Age Range</label>
 									<select onChange={this.handleChange} name="age" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="one">16 - 22</option>
+										<option value="1">16 - 22</option>
 										<option value="two">22 - 34</option>
 										<option value="three">35 - 44</option>
 										<option value="four">45 - 54</option>
@@ -158,13 +173,11 @@ class DemoForm extends Component {
 									</select>
 								</div>
 
-								<Link to="/" >
 									<button 
-										onClick={ () => {this.handleFormSubmit()}} 
-										id="submitbtn" type="submit" className="btn btn-primary">
+										onClick={ () => this.handleFormSubmit()} 
+										id="submitbtn" className="btn btn-primary">
 										Submit
 									</button>
-								</Link>
 						</form>
 					</div>
 					<div className="col-6 blue full-height">
