@@ -93,7 +93,7 @@ class DemoForm extends Component {
 									<label htmlFor="inputState">Select Your Age Range</label>
 									<select onChange={this.handleChange} name="age" id="inputState" className="form-control">
 										<option value="pns">Prefer Not to Say</option>
-										<option value="1">16 - 22</option>
+										<option value="one">16 - 22</option>
 										<option value="two">22 - 34</option>
 										<option value="three">35 - 44</option>
 										<option value="four">45 - 54</option>
