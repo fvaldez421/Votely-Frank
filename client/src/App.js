@@ -80,7 +80,7 @@ class App extends Component {
 
     API.getUser(userId)
       .then(res => {
-        let valueTest = (res.data[0].age).toString();
+        let valueTest = (res.data[0].region).toString();
         let valBool = valueTest.includes(1);
         // console.log(valueTest);
         // console.log(valBool);
