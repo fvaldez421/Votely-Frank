@@ -32,8 +32,8 @@ module.exports = {
 
 	// update user - not sure when this will be used
 	update: function(req, res) {
-		// console.log("Updating User");
-		// console.log(req.body);
+		console.log("Updating User");
+		console.log(req.body);
 		db.User
 			.findOneAndUpdate({ "userId": req.params.id }, req.body)
 			.then(dbModel => res.json(dbModel))
