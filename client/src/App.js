@@ -81,9 +81,13 @@ class App extends Component {
     API.getUser(userId)
       .then(res => {
         let valueTest = (res.data[0].region).toString();
-        let valBool = valueTest.includes(1);
-        // console.log(valueTest);
+        // let valBool = valueTest.includes(2);
+        if (!valueTest.includes(1) && !valueTest.includes(2) && !valueTest.includes(3) && !valueTest.includes(4) && !valueTest.includes(5)) {
+          this.setState({ newDems: true });
+          // console.log(valBool);
+        }
         // console.log(valBool);
+        // console.log(this.state.newDems);
         // console.log(res.data[0]);
         if (res.data[0]) {
           // window.sessionStorage.setItem("userExist", true);
@@ -91,14 +95,6 @@ class App extends Component {
             this.setState({ userExist: true }); 
             // console.log(this.state.userExist);           
           }
-        };
-        // if (valBool) {
-        //   this.setState({ newDems: false });
-        //   console.log(this.state.newDems);
-        // }else 
-        if (!valBool) {
-          this.setState({ newDems: true });
-          // console.log(this.state.newDems);
         };
       })
       .catch(err => console.log(err));
