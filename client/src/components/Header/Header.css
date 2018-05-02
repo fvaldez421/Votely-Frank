@@ -6,10 +6,14 @@ nav{
   margin-bottom:0!important;
 }
 
-.navbar-brand img{
-  width:100px;
-  
+.navbar-brand {
+  height: 34px;
+  align-content: center;
 }
+img{
+  height: 20px;
+}
+
 nav{
   background-color:#0057B5;
   color:#fff;
@@ -17,6 +21,7 @@ nav{
   -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
   -moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
   box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
+  padding: 0px 0px;
 }
 
 nav li a:hover{
@@ -28,9 +33,15 @@ h1{
 }
 
 a{
-  color:#fff
+  color:#fff;
 }
-
+.noMarg {
+  margin: 5.5px 10px;
+}
+.noPad {
+  padding: 0px 0px;
+}
 .showNone {
   display: none;
 }
+

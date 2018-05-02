@@ -6,3 +6,58 @@
 .bills-page .panel-title{
   margin-top:5%;
 }
+
+/*h1, h2, h3{
+	margin: 20px auto;
+	text-align: center;
+}
+*/
+
+.largeH {
+	display: all;
+}
+.smallH {
+	display: none;
+}
+.full {
+	display: contents;
+}
+.tablet {
+	display: none;
+}
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+	.full {
+		display: none;
+	}
+	.tablet {
+		display: contents;
+	}
+	.mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.full {
+		display: none;
+	}
+	.tablet {
+		display: none;
+	}
+	.mobile {
+		display: contents;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.smallH {
+		display: inherit;
+	}
+	.largeH {
+		display: none;
+	}
+}
