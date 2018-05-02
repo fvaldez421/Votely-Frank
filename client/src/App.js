@@ -21,6 +21,7 @@ class App extends Component {
     this.handleLogoutClick = this.handleLogoutClick.bind(this);
     this.state = { 
       isLoggedIn: false,
+      gotUser: false,
       userId: "", 
       userName: "", 
       userExist: false,
@@ -61,7 +62,7 @@ class App extends Component {
   }
   
   handleLogoutClick() {
-    this.setState({ isLoggedIn: false, userExist: false, userId: "", userName: "" });
+    this.setState({ isLoggedIn: false, userExist: false, gotUser: false, userId: "", userName: "" });
     window.sessionStorage.setItem("loggedIn", false);
     window.sessionStorage.setItem("userExist", false);
     // console.log("logging user out");
@@ -76,31 +77,35 @@ class App extends Component {
     }else {
       userId = id;
     };
-
-    API.getUser(userId)
-      .then(res => {
-        let valueTest = (res.data[0].region).toString();
-        // let valBool =valueTest.indexOf("2") === -1;
-        if (valueTest.indexOf("1") === -1 
-          && valueTest.indexOf("2") === -1 
-          && valueTest.indexOf("3") === -1 
-          && valueTest.indexOf("4") === -1 
-          && valueTest.indexOf("5") === -1) {
-          this.setState({ newDems: true });
-          // console.log(valBool);
-        }
-        // console.log(valBool);
-        // console.log(this.state.newDems);
-        // console.log(res.data[0]);
-        if (res.data[0]) {
-          // window.sessionStorage.setItem("userExist", true);
-          if (this.state){
-            this.setState({ userExist: true }); 
-            // console.log(this.state.userExist);           
+    if (!this.state.gotUser) {
+      API.getUser(userId)
+        .then(res => {
+          let valueTest = (res.data[0].region).toString();
+          // let valBool =valueTest.indexOf("2") === -1;
+          if (valueTest.indexOf("1") === -1 
+            && valueTest.indexOf("2") === -1 
+            && valueTest.indexOf("3") === -1 
+            && valueTest.indexOf("4") === -1 
+            && valueTest.indexOf("5") === -1) {
+            this.setState({ newDems: true });
+            // console.log(valBool);
           }
-        };
-      })
-      .catch(err => console.log(err));
+          // console.log(valBool);
+          // console.log(this.state.newDems);
+          // console.log(res.data[0]);
+          if (res.data[0]) {
+            // window.sessionStorage.setItem("userExist", true);
+            if (this.state){
+              this.setState({ userExist: true }); 
+              // console.log(this.state.userExist);           
+            }
+          };
+          if (!this.state.gotUser) {
+            this.setState({ gotUser: true });
+          }
+        })
+        .catch(err => console.log(err));
+    }
   }
 
   render() {
