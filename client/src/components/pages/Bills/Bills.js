@@ -105,31 +105,71 @@ class Bills extends Component {
 			.catch(err => console.log(err));
 	};
 
-		render() {
-			return (
-				<Wrapper>
-          <div className="row bills-page">
-              <h1 className="panel-title mx-auto">FIND CONGRESSIONAL BILLS</h1>
-          </div>    
-			<div className="row">
-				{this.state.bills.map((bill, i) => (
-					<BillBlock
-						key={i}
-						title={bill.name}
-						bill_id={bill.bill_id}
-						short_summary={bill.summary_short}
-						introduced_date={bill.introduced_date}
-						latest_major_action_date={bill.latest_major_action_date}
-						saveBills={this.saveBills}
-					>
-					</BillBlock>
-				)
-				)}
-			</div>
+	render() {
+		return (
+			<Wrapper>
+				<div className="row bills-page">
+	              <h1 className="panel-title mx-auto largeH">FIND CONGRESSIONAL BILLS</h1>
+	              <h3 className="panel-title mx-auto smallH">FIND CONGRESSIONAL BILLS</h3>
+	          	</div>   
+	          	<div className="row center">
+				<div className="full">
+					{
+						this.state.bills.map((bill, i) => (
+							<BillBlock
+								width={"4"}
+								key={i}
+								title={bill.name}
+								bill_id={bill.bill_id}
+								short_summary={bill.summary_short}
+								introduced_date={bill.introduced_date}
+								latest_major_action_date={bill.latest_major_action_date}
+								saveBills={this.saveBills}
+							/>
+						))
+					}
+				</div>
+
+				<div className="tablet">
+					{
+						this.state.bills.map((bill, i) => (
+							<BillBlock
+								width={"6"}
+								key={i}
+								title={bill.name}
+								bill_id={bill.bill_id}
+								short_summary={bill.summary_short}
+								introduced_date={bill.introduced_date}
+								latest_major_action_date={bill.latest_major_action_date}
+								saveBills={this.saveBills}
+							/>
+						))
+					}
+				</div>
+
+				<div className="mobile">
+					{
+						this.state.bills.map((bill, i) => (
+							<BillBlock
+								width={"12"}
+								key={i}
+								title={bill.name}
+								bill_id={bill.bill_id}
+								short_summary={bill.summary_short}
+								introduced_date={bill.introduced_date}
+								latest_major_action_date={bill.latest_major_action_date}
+								saveBills={this.saveBills}
+							/>
+						))
+					}
+				</div>
+				</div>
+
 			</Wrapper>
-			)
-		}
+		)
 	}
+}
+
 export default Bills;
 
 

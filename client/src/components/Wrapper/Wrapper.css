@@ -9,3 +9,28 @@
 	/*margin-bottom: 100px;*/
 	margin-bottom: 100px;
 }
+
+@media screen and (max-width: 992px) {
+	.billwrap {
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.billwrap {
+		width: 590px;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.billwrap {
+		width: 460px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.billwrap {
+		width: 370px;
+	}
+}

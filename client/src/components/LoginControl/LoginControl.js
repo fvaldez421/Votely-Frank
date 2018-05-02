@@ -12,10 +12,14 @@ const LoginControl = (props) => (
       fetch_basic_profile="true" >
         { props.isLoggedIn ?
           <GoogleLogout 
+            text="Logout"
+            width="180px"
             onLogoutSuccess={props.handleLogoutClick} 
             />
           : 
           <GoogleLogin 
+            text="Login"
+            width="180px"
             onLoginSuccess={props.handleLoginClick} 
             /> 
         }
