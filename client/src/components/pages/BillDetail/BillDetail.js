@@ -33,11 +33,11 @@ class BillDetail extends Component {
 			.then(res => {
 				this.setState({ bill: res.data[0] });
 				// console.log(this.state.bill);
-				if (this.state.bill.votes_no.includes(this.state.userId)) {
+				if (this.state.bill.votes_no.indexOf(this.state.userId) !== -1) {
 					this.setState({ voted: true })
-				}else if (this.state.bill.votes_yes.includes(this.state.userId)) {
+				}else if (this.state.bill.votes_yes.indexOf(this.state.userId) !== -1) {
 					this.setState({ voted: true })
-				}else if (this.state.bill.votes_undecided.includes(this.state.userId)) {
+				}else if (this.state.bill.votes_undecided.indexOf(this.state.userId) !== -1) {
 					this.setState({ voted: true })	
 				}
 				this.setState({ loaded: true });
@@ -45,7 +45,7 @@ class BillDetail extends Component {
 	}
 
 	voteYes() { 
-		if (!(this.state.bill.votes_yes.includes(this.state.userId))) {
+		if (!(this.state.bill.votes_yes.indexOf(this.state.userId) !== -1)) {
 			let bill = this.state.bill;
 			bill.votes_yes.push(this.state.userId);
 			this.setState({ bill: bill });
@@ -61,7 +61,7 @@ class BillDetail extends Component {
 	}
 
 	voteNo() {
-		if (!(this.state.bill.votes_no.includes(this.state.userId))) {
+		if (!(this.state.bill.votes_no.indexOf(this.state.userId) !== -1)) {
 			let bill = this.state.bill;
 			bill.votes_no.push(this.state.userId);
 			this.setState({ bill });
@@ -77,7 +77,7 @@ class BillDetail extends Component {
 	}
 
 	voteUndecided() {
-		if (!(this.state.bill.votes_undecided.includes(this.state.userId))) {
+		if (!(this.state.bill.votes_undecided.indexOf(this.state.userId) !== -1)) {
 			let bill = this.state.bill;
 			bill.votes_undecided.push(this.state.userId);
 			this.setState({ bill });

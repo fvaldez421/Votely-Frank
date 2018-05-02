@@ -13,7 +13,6 @@ import Stats from "./components/pages/Stats";
 
 import "./App.css";
 
-
 class App extends Component {
 
   constructor(props) {
@@ -81,8 +80,12 @@ class App extends Component {
     API.getUser(userId)
       .then(res => {
         let valueTest = (res.data[0].region).toString();
-        // let valBool = valueTest.includes(2);
-        if (!valueTest.includes(1) && !valueTest.includes(2) && !valueTest.includes(3) && !valueTest.includes(4) && !valueTest.includes(5)) {
+        // let valBool =valueTest.indexOf("2") === -1;
+        if (valueTest.indexOf("1") === -1 
+          && valueTest.indexOf("2") === -1 
+          && valueTest.indexOf("3") === -1 
+          && valueTest.indexOf("4") === -1 
+          && valueTest.indexOf("5") === -1) {
           this.setState({ newDems: true });
           // console.log(valBool);
         }
