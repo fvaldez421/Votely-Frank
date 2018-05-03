@@ -1,21 +1,109 @@
+
 .blue{
   background-color:#007BFF;
   padding:20px;
   color:#fff;
-  height:500px;
+  height:420px;
   padding-top:100px!important;
+  margin: 20px 0px;
 }
 
 .red{
   background-color:#FB2259;
   padding:20px;
   color:#fff;
-  height:500px;
+  height:420px;
   padding-top:100px!important;
 }
 
-.jumbotron h2, .jumbotron p{
+.blueTab{
+  background-color:#007BFF;
+  padding: 0px 20px!important;
+  color:#fff;
+  height:350px;
+  padding-top:60px!important;
+  margin: 0px 0px;
+}
+
+.redTab{
+  background-color:#FB2259;
+  padding:0px;
+  color:#fff;
+  height:350px;
+  padding-top:60px!important;
+}
+
+.mainImageTab {
+  height: 270px;
+  width: auto;
+  position: absolute;
+  z-index: 0;
+}
+
+.pTab, .hTab {
+  margin: 0px auto;
+  text-align: center;
+  width: 80%!important;
+}
+
+.blueMob{
+  background-color:#007BFF;
+  padding: 0px 20px!important;
+  color:#fff;
+  height:300px;
+  padding-top:40px!important;
+  margin: 0px 0px;
+}
+
+.redMob{
+  background-color:#FB2259;
+  padding:0px;
+  color:#fff;
+  height:300px;
+  padding-top:40px!important;
+}
+
+.mainImageMob {
+  height: 240px;
+  width: auto;
+  position: absolute;
+  z-index: 0;
+}
+
+.pMob, .hMob {
+  width: 100%!important;
+}
+
+.autoMarg {
+  margin-top: 16%!important;
+}
+.jumbotron h2, .jumbotron p {
   text-align:center;
   width: 50%;
-  margin:0 auto
+  margin:0 auto;
+}
+
+.mainImage{
+  height: 110%;
+  width: auto;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.jumbotron{
+  padding-top:0;
+}
+
+h1{
+  margin-top: 10%;
+}
+h2{
+  margin-top: 20%;
+  z-index: 2;
+}
+
+.jumbotron .headertext{
+  text-align: center;
+  margin: 0px auto;
 }
