@@ -3,6 +3,10 @@
   text-align:left;
 }
 
+.bill {
+  margin: 10px 0px;
+}
+
 .card-text{
   overflow: scroll;
   height: 150px;
