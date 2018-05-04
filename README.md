@@ -7,9 +7,15 @@
 ### About our App
 
 We created a full stack  application called Vote.ly that lets voters be more engaged citizens in the Political process. Our application calls on  the Pro Republica API to look up congressional representatives and the bills they are sponsoring also accounting for how far bills are along the legislative process. 
-The user is authenticated through Google Oauth and assigned a unique id. Each user ID is pertinent to dislaying particualr demographic statistics of vote results. Upon vsiting the website (Heroku Deployment info) each user will login through Google OAUTH and unique user information along with congressional bills will be stored in a Mongo database.
+The user is authenticated through Google Oauth and assigned a unique id. Each user ID is pertinent to displaying particualr demographic statistics of vote results. Upon vsiting the website (Heroku Deployment info) each user will login through Google OAUTH and unique user information along with congressional bills will be stored in a MongoDB database.
 
-### To Visit
+### To Visit This Project
+
+* Visit: (https://votely-frank.herokuapp.com/)
+* Visit: https://github.com/fvaldez421/Votely-Frank
+* See our presentation on Slides at : [Github] https://docs.google.com/presentation/d/1pOIRwqdiUuqxCpK8G55H_aS72uPInnrdb0Q1vwGrZkI/edit#slide=id.p
+
+### Original Project
 
 * Visit: (Heroku Deployment link)
 * Visit: https://github.com/Dangrmurray/Democracy-App
