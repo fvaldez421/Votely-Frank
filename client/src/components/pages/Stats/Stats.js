@@ -1542,7 +1542,6 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-              <div className="App container">
                 <div className="row">
                   <div className="col-md-12">
                   {
@@ -1585,8 +1584,6 @@ class App extends Component {
                   }
                   </div>
                 </div>
-              </div>
-
     </div>
     );
   }

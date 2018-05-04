@@ -3,33 +3,8 @@
   background-color: white;
 }
 
-.AgeChart{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.IncomeChart{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-
-.GenderChart{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.EducationChart{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.RaceChart{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.RegionChart{
-	margin-top: 20px;
-	margin-bottom: 20px;
+.AgeChart, .IncomeChart, 
+.GenderChart, .EducationChart, 
+.RaceChart, .RegionChart{
+	margin: 20px 0px;
 }

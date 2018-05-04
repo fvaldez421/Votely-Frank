@@ -31,4 +31,36 @@ a{
 
 .BillRow h6{
   padding-top: 20px;
+  margin-left: 5px;
+}
+
+.demoBtn {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .BillRow h6{
+    margin-left: 0px;
+  }
+  .redBtn {
+    margin-right: 0!important;
+  }
+  .norm {
+    display: all;
+  }
+  .small {
+    display: none;
+  }
+  .blueDyna {
+    padding-top: 70px!important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .norm {
+    display: none;
+  }
+  .small {
+    display: inherit;
+  }
 }
