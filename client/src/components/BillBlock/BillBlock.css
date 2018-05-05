@@ -41,3 +41,6 @@
     height:auto; /* just added this line */
 }
 
+.ieFix {
+  display: inline-block;
+}

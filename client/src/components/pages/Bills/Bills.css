@@ -1,3 +1,4 @@
+
 .card{
   padding:20px;
   margin:10px
@@ -13,23 +14,30 @@
 }
 */
 
+.full, .tablet, .mobile {
+	width: 100%;
+}
+
 .largeH {
 	display: all;
 }
 .smallH {
 	display: none;
 }
-.full {
-	display: contents;
-}
-.tablet {
-	display: none;
-}
-.mobile {
-	display: none;
+
+@media screen and (min-width: 993px) {
+	.full {
+		display: contents;
+	}
+	.tablet {
+		display: none;
+	}
+	.mobile {
+		display: none;
+	}
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (min-width: 500px) and (max-width: 992px) {
 	.full {
 		display: none;
 	}
