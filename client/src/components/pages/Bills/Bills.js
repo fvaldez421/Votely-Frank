@@ -79,7 +79,7 @@ class Bills extends Component {
 					} else if (summary.indexOf("&quot;") !== -1){
 						summary.replace("&quot;", "");
 						return summary;
-					} else if (summary.indexOf("&#39;")) !== -1 {
+					} else if (summary.indexOf("&#39;") !== -1 ){
 						summary.replace("&#39;", "");
 						return summary;
 					} else {

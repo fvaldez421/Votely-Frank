@@ -28,7 +28,7 @@ class BillDetail extends Component {
 		};
     }
 
-	getBill() {
+	getBill = () => {
 		API.checkBill(this.state.bill_id)
 			.then(res => {
 				this.setState({ bill: res.data[0] });
@@ -44,7 +44,7 @@ class BillDetail extends Component {
 			})
 	}
 
-	voteYes() { 
+	voteYes = () => { 
 		if (!(this.state.bill.votes_yes.indexOf(this.state.userId) !== -1)) {
 			let bill = this.state.bill;
 			bill.votes_yes.push(this.state.userId);
@@ -60,7 +60,7 @@ class BillDetail extends Component {
 		.catch(err => console.log(err));
 	}
 
-	voteNo() {
+	voteNo = () => {
 		if (!(this.state.bill.votes_no.indexOf(this.state.userId) !== -1)) {
 			let bill = this.state.bill;
 			bill.votes_no.push(this.state.userId);
@@ -76,7 +76,7 @@ class BillDetail extends Component {
 		.catch(err => console.log(err));
 	}
 
-	voteUndecided() {
+	voteUndecided = () => {
 		if (!(this.state.bill.votes_undecided.indexOf(this.state.userId) !== -1)) {
 			let bill = this.state.bill;
 			bill.votes_undecided.push(this.state.userId);
