@@ -55,14 +55,24 @@ class App extends Component {
       // console.log("finding user, ID: " + response.getId());
       window.sessionStorage.setItem("loggedIn", true);
       window.sessionStorage.setItem("user", response.getId());
-      this.setState({ isLoggedIn: true, userId: response.getId(), userName: response.w3.ig });
+      this.setState({ 
+        isLoggedIn: true, 
+        userId: response.getId(), 
+        userName: response.w3.ig 
+      });
       this.getUser();
     }
     // console.log(this.state);
   }
   
   handleLogoutClick() {
-    this.setState({ isLoggedIn: false, userExist: false, gotUser: false, userId: "", userName: "" });
+    this.setState({ 
+      isLoggedIn: false, 
+      userExist: false, 
+      gotUser: false, 
+      userId: "", 
+      userName: "" 
+    });
     window.sessionStorage.setItem("loggedIn", false);
     window.sessionStorage.setItem("userExist", false);
     // console.log("logging user out");

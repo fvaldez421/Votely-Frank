@@ -72,13 +72,14 @@ class Bills extends Component {
 					};
 				}
 
+				//Checks the given summary for formatting queues
 				function getSummary(summary) {
 					if (summary === "") {
 						return "No description available, please visit the 'View Bill' link for more information";
-					} else if (summary.includes("&quot;")){
+					} else if (summary.indexOf("&quot;") !== -1){
 						summary.replace("&quot;", "");
 						return summary;
-					} else if (summary.includes("&#39;")) {
+					} else if (summary.indexOf("&#39;")) !== -1 {
 						summary.replace("&#39;", "");
 						return summary;
 					} else {
