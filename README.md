@@ -23,11 +23,11 @@ The user is authenticated through Google Oauth and assigned a unique id. Each us
 
 ### Contributors
 
-* Daniel Murray
-* David Morrill
 * Frank Valdez
-* Jason Kunkel
 * Ryan  Brownlow
+* Daniel Murray
+* Jason Kunkel
+* David Morrill
 * Abdel Rahman
 
 ### Technologies Utilised
