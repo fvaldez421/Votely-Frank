@@ -13,11 +13,10 @@ The user is authenticated through Google Oauth and assigned a unique id. Each us
 
 * Visit: (https://votely-frank.herokuapp.com/)
 * Visit: https://github.com/fvaldez421/Votely-Frank
-* See our presentation on Slides at : [Github] https://docs.google.com/presentation/d/1pOIRwqdiUuqxCpK8G55H_aS72uPInnrdb0Q1vwGrZkI/edit#slide=id.p
 
 ### Original Project
 
-* Visit: (Heroku Deployment link)
+* Visit: (https://vote-ly.herokuapp.com/)
 * Visit: https://github.com/Dangrmurray/Democracy-App
 * See our presentation on Slides at : [Github] https://docs.google.com/presentation/d/1pOIRwqdiUuqxCpK8G55H_aS72uPInnrdb0Q1vwGrZkI/edit#slide=id.p
 
@@ -36,9 +35,8 @@ The user is authenticated through Google Oauth and assigned a unique id. Each us
 **Javascript**: Main language for framework.
 **MongoDB**: Non relational Database with independent input fields.
 **Bootstrap**: Front-End design.
-**ProBublica**: API Used to populate the Bills page.
-**Express.js**: Node package used for routing.
-**Charts.js**: JavaScript Library used to illustrate demographic data.
+**ProBublica**: API Used to populate the congressional Bills.
+**Chart.js**: JavaScript Library used to illustrate demographic data.
 **Google OAUTH**: _User login authentication.
 **Heroku Deployment**: Used for deploying to the internet.
 
