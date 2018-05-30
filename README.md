@@ -7,7 +7,7 @@
 ### About our App
 
 We created a full stack  application called Vote.ly that lets voters be more engaged citizens in the Political process. Our application calls on  the Pro Republica API to look up congressional representatives and the bills they are sponsoring also accounting for how far bills are along the legislative process. 
-The user is authenticated through Google Oauth and assigned a unique id. Each user ID is pertinent to displaying particualr demographic statistics of vote results. Upon vsiting the website (Heroku Deployment info) each user will login through Google OAUTH and unique user information along with congressional bills will be stored in a MongoDB database.
+The user is authenticated through Google Oauth and assigned a unique id. Each user ID is pertinent to displaying particualr demographic statistics of vote results. Upon visiting the website each user will login through Google OAUTH and unique user information along with congressional bills will be stored in a MongoDB database.
 
 ### To Visit This Project
 
@@ -29,16 +29,16 @@ The user is authenticated through Google Oauth and assigned a unique id. Each us
 * David Morrill
 * Abdel Rahman
 
-### Technologies Utilised
+### Technologies Utilized
 
-**React.js**: Render components and data dynamic throughout the application.
-**Javascript**: Main language for framework.
-**MongoDB**: Non relational Database with independent input fields.
-**Bootstrap**: Front-End design.
-**ProBublica**: API Used to populate the congressional Bills.
-**Chart.js**: JavaScript Library used to illustrate demographic data.
-**Google OAUTH**: _User login authentication.
-**Heroku Deployment**: Used for deploying to the internet.
+* **React.js**: Render components and data dynamic throughout the application.
+* **Javascript**: Main language for framework.
+* **MongoDB**: Non relational Database with independent input fields.
+* **Bootstrap**: Front-End design.
+* **ProBublica**: API Used to populate the congressional Bills.
+* **Chart.js**: JavaScript Library used to illustrate demographic data.
+* **Google OAUTH**: User login authentication.
+* **Heroku Deployment**: Used for deploying to the internet.
 
 ### Bill Illustration
 
